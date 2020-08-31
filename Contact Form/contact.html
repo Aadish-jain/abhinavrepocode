@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://aajbrand.blogspot.com/p/contact.html' hreflang='en' rel='alternate' />
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .page-contact-form input,
+        .page-contact-form textarea {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .page-contact-form input.contact-form-button.contact-form-button-submit {
+            padding: .75rem 1.5rem;
+            background: #000;
+            /* Button background color */
+            color: #fff;
+            /* Button text color */
+            border: none;
+        }
+
+        .page-contact-form input.contact-form-button.contact-form-button-submit:hover {
+            background: #777;
+            /* Button background hover color */
+            color: #fff;
+            /* Button text hover color */
+        }
+
+        .join-main-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .join-text {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+            margin-left: 2.8rem;
+        }
+
+        .accent-text {
+            color: #BC3A80
+        }
+
+        .join-form {
+            background-color: #ffffff;
+            width: 50vw;
+            max-width: 50%;
+            padding: 2rem 4rem;
+            border-radius: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .input-group label {
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+
+        .input-group input {
+            outline: none;
+            background: none;
+            border: 1px solid #2E3852;
+            font-size: 1em;
+            padding: .5em;
+            color: inherit;
+            border-radius: 5px;
+        }
+
+        .input-group textarea {
+            outline: none;
+            background: none;
+            border: 1px solid #2E3852;
+            font-size: 1em;
+            padding: .5em;
+            color: inherit;
+            border-radius: 5px;
+        }
+
+        .input-group textarea:focus {
+            border-color: #596da0;
+        }
+
+        .input-group input:focus {
+            border-color: #596da0;
+        }
+
+        @media (max-width: 900px) {
+            .join-main-section {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .join-form {
+                width: 80vw;
+                max-width: inherit;
+                margin: 2rem 0;
+            }
+        }
+
+        .btn {
+            color: white;
+            background-color: #25a186;
+            padding: .75rem 1.5rem;
+            position: absolute;
+            border-radius: .5rem;
+            text-decoration: none;
+            font-size: .9rem;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #7cc6bc;
+        }
+
+        .btn:focus {
+            background-color: #7cc6bc;
+        }
+    </style>
+    <div class="contact-form-widget page-contact-form">
+        <section class="join-main-section">
+            <div class="form">
+                <form class="join-form" name="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbwTk9b6S9TfpTjYz3nx1hhpLGVgtm5wGcSZZ2H09ghzn-0V57k/exec" 
+                {"queryString":"name=Abhinav+Jain&email=abhinavsurenderccas%40gmail.com&email-message=Hello%2C+I+am+abhinav+jain.","parameter":{"name":"Abhinav Jain","email-message":"Hello, I am abhinav jain.","email":"abhinavsurenderccas@gmail.com"},"contextPath":"","parameters":{"name":["Abhinav Jain"],"email":["abhinavsurenderccas@gmail.com"],"email-message":["Hello, I am abhinav jain."]},"contentLength":-1}
+                
+                    <h1 class="join-text">Drop us a
+                        <span class="accent-text">line.</span>
+                    </h1>
+                    <br />
+                    <div class="input-group">
+                        <label>Name:</label>
+                        <input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" type="text"
+                            value="" />
+                        <!--<input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" value="" />-->
+                    </div>
+                    <!--E-mail: <span id="required">*</span><br />
+<input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" value="" />-->
+                    <div class="input-group">
+                        <label>Email:<span id="required">*</span></label>
+                        <input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" type="email"
+                            value="" />
+                    </div>
+                    <!--Message: <span id="required">*</span><br />
+<textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" rows="5"></textarea>-->
+                    <div class="input-group">
+                        <label>Message:<span id="required">*</span></label>
+                        <textarea class="contact-form-email-message" id="ContactForm1_contact-form-email-message"
+                            name="email-message" rows="4" value=""></textarea></div>
+                    <div class="input-group">
+                        <!--<input class="contact-form-button contact-form-button-submit" id="ContactForm1_contact-form-submit" type="button" value="Submit" />-->
+                        <button class="btn contact-form-button contact-form-button-submit"
+                            id="ContactForm1_contact-form-submit" type="Submit" value="Submit">Submit</button>
+                    </div>
+                    <br />
+                    <div class="contact-form-error-message" id="ContactForm1_contact-form-error-message">
+                    </div>
+                    <div class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
